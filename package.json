@@ -1,0 +1,26 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "learn unit test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "test-coverage": "jest --watchAll --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest":{
+    "//":"collect covratge options",
+    "collectCoverage": true,
+    "coverageReporters":[
+      "html"
+    ],
+    "//2":"covrage directory",
+    "coverageDirectory":"reports",
+    "collectCoverageFrom":["**/*.(js,jsx,ts,tsx)"],
+    "coveragePathIgnorePatterns":["node_modules","/build/"]
+  }
+}
